@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pemesanan | BukuKu</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="checkout">
+<header class="topbar">
+  <a class="brand" href="dashboard.html">📚 BukuKu</a>
+  <nav aria-label="Menu utama"><a href="dashboard.html">Dashboard</a><a href="stok.html">Stok</a><a href="checkout.html">Pemesanan</a><a href="tracking.html">Tracking</a></nav>
+  <div><button id="btnTema" class="btn kecil" type="button"></button> <button id="btnLogout" class="btn kecil" type="button">Keluar</button></div>
+</header>
+<main>
+  <h1>Pemesanan Buku</h1>
+  <section class="kartu" aria-labelledby="jKeranjang"><h2 id="jKeranjang" style="margin-top:0">Keranjang</h2>
+    <div class="grid-form">
+      <div><label for="pilihBuku">Buku</label><select id="pilihBuku"></select></div>
+      <div><label for="qty">Jumlah</label><input type="number" id="qty" min="1" value="1"></div>
+      <div><button class="btn" id="btnTambah" type="button">Tambah ke keranjang</button></div>
+    </div>
+    <div class="tabel-wrap"><table><thead><tr><th>Judul</th><th>Harga</th><th>Jumlah</th><th>Subtotal</th><th>Aksi</th></tr></thead><tbody id="tbodyKeranjang"></tbody></table></div>
+    <p><strong>Total: <span id="totalBayar">Rp 0</span></strong></p></section>
+  <section class="kartu" aria-labelledby="jPemesan"><h2 id="jPemesan" style="margin-top:0">Data pemesan &amp; pembayaran</h2>
+    <form id="formPesan" novalidate><div class="grid-form">
+      <div><label for="namaPemesan">Nama pemesan</label><input id="namaPemesan"></div>
+      <div><label for="hp">No. HP</label><input id="hp" inputmode="numeric" placeholder="08xxxxxxxxxx"></div>
+      <div><label for="ekspedisi">Ekspedisi</label><select id="ekspedisi"><option>JNE</option><option>J&amp;T</option><option>SiCepat</option><option>Pos Indonesia</option></select></div>
+      <div><label for="metode">Metode pembayaran</label><select id="metode"><option>Transfer Bank</option><option>E-Wallet</option><option>COD</option></select></div>
+    </div><label for="alamat">Alamat pengiriman</label><textarea id="alamat" rows="3"></textarea>
+    <p class="galat" id="errPesan" role="alert"></p><button class="btn" type="submit">Buat pesanan</button></form></section>
+  <section class="kartu" id="riwayat" aria-labelledby="jRiwayat"><h2 id="jRiwayat" style="margin-top:0">Laporan &amp; History Transaksi</h2>
+    <div class="tabel-wrap"><table><thead><tr><th>No. DO</th><th>Pemesan</th><th>Item</th><th>Pembayaran</th><th>Total</th></tr></thead><tbody id="tbodyRiwayat"></tbody></table></div></section>
+</main>
+<footer>© 2026 BukuKu – UTS Pemrograman Web 1</footer>
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

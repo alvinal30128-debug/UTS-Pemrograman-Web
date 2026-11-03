@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login | BukuKu</title>
+<link rel="stylesheet" href="css/style.css">
+<style>/* CSS INTERNAL: khusus halaman login */
+.login-wrap .kartu{box-shadow:0 8px 30px rgba(0,0,0,.12)}
+</style>
+</head>
+<body data-page="login">
+<main class="login-wrap">
+  <section class="kartu" aria-labelledby="jdl">
+    <h1 id="jdl" style="margin-top:0">📚 BukuKu</h1>
+    <p>Masuk untuk memesan buku.</p>
+    <form id="formLogin" novalidate>
+      <label for="email">Email</label><input type="email" id="email" placeholder="nama@email.com" autocomplete="username">
+      <label for="password">Password</label><input type="password" id="password" autocomplete="current-password">
+      <div class="baris-btn">
+        <button type="submit" class="btn">Login</button>
+        <button type="button" id="btnLupa" class="btn garis">Lupa Password</button>
+        <button type="button" id="btnDaftar" class="btn garis">Daftar</button>
+      </div>
+    </form>
+    <p style="margin-top:1rem"><button id="btnTema" class="btn kecil" type="button"></button></p>
+  </section>
+</main>
+<div class="modal" id="modalLupa" role="dialog" aria-modal="true" aria-labelledby="jLupa" hidden>
+  <div class="kotak"><h2 id="jLupa" style="margin-top:0">Lupa Password</h2>
+    <form id="formLupa"><label for="emailLupa">Email terdaftar</label><input type="email" id="emailLupa" required>
+      <div class="baris-btn"><button class="btn" type="submit">Kirim tautan reset</button><button class="btn garis" type="button" data-tutup="modalLupa">Batal</button></div></form></div>
+</div>
+<div class="modal" id="modalDaftar" role="dialog" aria-modal="true" aria-labelledby="jDaftar" hidden>
+  <div class="kotak"><h2 id="jDaftar" style="margin-top:0">Daftar Akun</h2>
+    <form id="formDaftar" novalidate>
+      <label for="namaDaftar">Nama lengkap</label><input id="namaDaftar">
+      <label for="emailDaftar">Email</label><input type="email" id="emailDaftar">
+      <label for="passDaftar">Password (min. 6 karakter)</label><input type="password" id="passDaftar">
+      <p class="galat" id="errDaftar" role="alert"></p>
+      <div class="baris-btn"><button class="btn" type="submit">Daftar</button><button class="btn garis" type="button" data-tutup="modalDaftar">Batal</button></div></form></div>
+</div>
+<footer>© 2026 BukuKu – UTS Pemrograman Web 1</footer>
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

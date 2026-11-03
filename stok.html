@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stok Buku | BukuKu</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="stok">
+<header class="topbar">
+  <a class="brand" href="dashboard.html">📚 BukuKu</a>
+  <nav aria-label="Menu utama"><a href="dashboard.html">Dashboard</a><a href="stok.html">Stok</a><a href="checkout.html">Pemesanan</a><a href="tracking.html">Tracking</a></nav>
+  <div><button id="btnTema" class="btn kecil" type="button"></button> <button id="btnLogout" class="btn kecil" type="button">Keluar</button></div>
+</header>
+<main>
+  <h1>Informasi Stok / Katalog</h1>
+  <section class="kartu" aria-labelledby="jTambah"><h2 id="jTambah" style="margin-top:0">Tambah stok baru</h2>
+    <form id="formStok" novalidate><div class="grid-form">
+      <div><label for="kode">Kode barang</label><input id="kode" placeholder="ASIP4301"></div>
+      <div><label for="nama">Nama barang</label><input id="nama"></div>
+      <div><label for="jenis">Jenis barang</label><input id="jenis" placeholder="Buku Ajar"></div>
+      <div><label for="edisi">Edisi</label><input id="edisi" placeholder="1"></div>
+      <div><label for="harga">Harga (Rp)</label><input type="number" id="harga" min="1"></div>
+      <div><label for="stok">Stok</label><input type="number" id="stok" min="0"></div>
+      <div><label for="cover">Cover (nama file di img/)</label><input id="cover" placeholder="buku.jpg"></div>
+    </div><p class="galat" id="errStok" role="alert"></p><button class="btn" type="submit">Tambah ke daftar</button></form></section>
+  <section class="kartu" aria-labelledby="jKatalog"><h2 id="jKatalog" style="margin-top:0">Daftar buku</h2>
+    <p id="infoStok"></p>
+    <div class="tabel-wrap"><table><thead><tr><th>Cover</th><th>Kode</th><th>Nama Barang</th><th>Jenis</th><th>Edisi</th><th>Harga</th><th>Stok</th><th>Aksi</th></tr></thead>
+    <tbody id="tbodyStok"></tbody></table></div></section>
+</main>
+<footer>© 2026 BukuKu – UTS Pemrograman Web 1</footer>
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

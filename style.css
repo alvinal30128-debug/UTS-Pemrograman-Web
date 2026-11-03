@@ -1,0 +1,52 @@
+:root{--bg:#f5f1e8;--kartu:#fffdf7;--teks:#1d2b2a;--redup:#5d6b69;--aksen:#0f6b5c;--aksen2:#e0a526;--garis:#d9d2c0;--err:#b3261e;--ok:#1b7f43}
+[data-tema="malam"]{--bg:#101a1a;--kartu:#172424;--teks:#eaf2ef;--redup:#9bb0ab;--aksen:#4fd1b5;--aksen2:#f0c04a;--garis:#2b3f3d;--err:#ff8a80;--ok:#6fdc98}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--teks);line-height:1.55;transition:background .3s,color .3s}
+h1,h2,h3,.brand{font-family:Georgia,"Times New Roman",serif}
+a{color:var(--aksen)}
+:focus-visible{outline:3px solid var(--aksen2);outline-offset:2px}
+.topbar{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;justify-content:space-between;padding:.8rem 1.5rem;background:var(--aksen);color:#fff}
+[data-tema="malam"] .topbar{color:#0b1414}
+.topbar a{color:inherit;text-decoration:none;margin-right:1rem}
+.brand{font-size:1.4rem;font-weight:bold}
+main{max-width:1000px;margin:1.5rem auto;padding:0 1rem}
+.kartu{background:var(--kartu);border:1px solid var(--garis);border-radius:10px;padding:1.2rem;margin-bottom:1.2rem}
+.btn{background:var(--aksen);color:#fff;border:0;border-radius:6px;padding:.6rem 1.1rem;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block}
+[data-tema="malam"] .btn{color:#0b1414}
+.btn:hover{filter:brightness(1.12)}
+.btn.kecil{padding:.3rem .7rem;font-size:.85rem;background:var(--aksen2);color:#1d2b2a}
+.btn.garis{background:transparent;color:var(--aksen);border:2px solid var(--aksen)}
+.btn.bahaya{background:var(--err);color:#fff}
+label{display:block;margin:.7rem 0 .25rem;font-weight:600}
+input,select,textarea{width:100%;padding:.6rem;border:1px solid var(--garis);border-radius:6px;background:var(--bg);color:var(--teks);font:inherit}
+.grid-form{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:.8rem;align-items:end}
+.galat{color:var(--err);font-size:.85rem;min-height:1.1rem;margin:.2rem 0 0}
+.menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1rem}
+.menu-grid a{display:block;padding:1.6rem 1rem;border:2px solid var(--garis);border-radius:10px;background:var(--kartu);text-decoration:none;color:var(--teks);font-size:1.15rem;font-weight:600;transition:transform .15s,border-color .15s}
+.menu-grid a:hover{transform:translateY(-3px);border-color:var(--aksen)}
+.tabel-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse}
+th,td{padding:.6rem;border-bottom:1px solid var(--garis);text-align:left;vertical-align:middle}
+th{background:var(--aksen);color:#fff}
+[data-tema="malam"] th{color:#0b1414}
+td img{width:46px;height:60px;object-fit:cover;border-radius:4px}
+td input{width:80px}
+.stok-rendah{color:var(--err);font-weight:bold}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.55);display:flex;align-items:center;justify-content:center;padding:1rem;z-index:10}
+.modal[hidden]{display:none}
+.modal .kotak{background:var(--kartu);border-radius:10px;padding:1.5rem;width:100%;max-width:400px;animation:muncul .2s}
+@keyframes muncul{from{transform:scale(.94);opacity:0}to{transform:none;opacity:1}}
+.login-wrap{min-height:100vh;display:grid;place-items:center;padding:1rem;margin:0 auto}
+.login-wrap .kartu{width:100%;max-width:400px;margin:0}
+.baris-btn{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1rem}
+.progres{display:flex;margin:1.2rem 0;gap:.3rem}
+.langkah{flex:1;text-align:center;padding:.6rem .2rem;background:var(--garis);border-radius:6px;font-size:.85rem;color:var(--redup)}
+.langkah.aktif{background:var(--ok);color:#fff;font-weight:bold}
+[data-tema="malam"] .langkah.aktif{color:#0b1414}
+.bar{height:12px;background:var(--garis);border-radius:6px;overflow:hidden}
+.bar span{display:block;height:100%;background:var(--ok);transition:width .6s}
+dl{display:grid;grid-template-columns:max-content 1fr;gap:.4rem 1.2rem}
+dt{color:var(--redup)}dd{margin:0;font-weight:600}
+footer{text-align:center;color:var(--redup);padding:2rem 1rem;font-size:.9rem}
+.kosong{color:var(--redup);text-align:center;padding:1rem}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
