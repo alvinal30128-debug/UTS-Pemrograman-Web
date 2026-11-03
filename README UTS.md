@@ -104,8 +104,8 @@ Setiap halaman memakai `<header>`, `<nav>`, `<main>`, `<section>`, dan `<footer>
 ### 1. Halaman Login
 tampilan awal halaman login (mode siang).
 
-![Halaman Login](<img width="1497" height="935" alt="image" src="https://github.com/user-attachments/assets/5d08625d-a8e2-48a7-a221-d2979c04fb43" />
-)
+![Halaman Login} <img width="1497" height="935" alt="image" src="https://github.com/user-attachments/assets/5d08625d-a8e2-48a7-a221-d2979c04fb43" />
+
 
 ### 2. Alert login gagal
 isi email/password salah lalu klik Login, sampai alert "Email/password yang anda masukkan salah" muncul.
