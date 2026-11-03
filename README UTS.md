@@ -11,7 +11,7 @@ Tugas UTS Pemrograman Web 1
 
 ## 🎥 Video Penjelasan
 
-▶️ **Link YouTube:** [PASTE LINK YOUTUBE DI SINI]
+▶️ **Link YouTube:** [https://youtu.be/4MdXdQ6hdY0]
 
 ---
 
