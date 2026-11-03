@@ -102,94 +102,109 @@ Setiap halaman memakai `<header>`, `<nav>`, `<main>`, `<section>`, dan `<footer>
 > Cara mengisi: simpan setiap screenshot ke folder `screenshots/` dengan nama file sesuai di bawah. Gambar akan otomatis muncul.
 
 ### 1. Halaman Login
-**Yang perlu di-screenshot:** tampilan awal halaman login (mode siang).
+tampilan awal halaman login (mode siang).
 
-![Halaman Login](screenshots/01-login.png)
+![Halaman Login](<img width="1497" height="935" alt="image" src="https://github.com/user-attachments/assets/5d08625d-a8e2-48a7-a221-d2979c04fb43" />
+)
 
 ### 2. Alert login gagal
-**Yang perlu di-screenshot:** isi email/password salah lalu klik Login, sampai alert "Email/password yang anda masukkan salah" muncul.
+isi email/password salah lalu klik Login, sampai alert "Email/password yang anda masukkan salah" muncul.
 
-![Alert Login Gagal](screenshots/02-login-gagal.png)
+![Alert Login Gagal](<img width="1502" height="927" alt="image" src="https://github.com/user-attachments/assets/9edf09d1-59e1-4020-b2f1-94c47a940bd8" />
+)
 
 ### 3. Modal Lupa Password
-**Yang perlu di-screenshot:** klik tombol "Lupa Password" sampai modal terbuka.
+klik tombol "Lupa Password" sampai modal terbuka.
 
-![Modal Lupa Password](screenshots/03-modal-lupa.png)
+![Modal Lupa Password](<img width="1502" height="897" alt="image" src="https://github.com/user-attachments/assets/1e235a78-9a72-4a42-ba30-8358c41738ac" />
+)
 
 ### 4. Modal Daftar (dengan pesan error)
-**Yang perlu di-screenshot:** klik "Daftar", isi data tidak valid (misalnya password kurang dari 6 karakter) sampai pesan error muncul.
+klik "Daftar", isi data tidak valid (misalnya password kurang dari 6 karakter) sampai pesan error muncul.
 
-![Modal Daftar](screenshots/04-modal-daftar.png)
+![Modal Daftar](<img width="1496" height="937" alt="image" src="https://github.com/user-attachments/assets/16415f87-b5d1-4ad0-b5b1-212239995254" />
+)
 
 ### 5. Dashboard (mode siang)
-**Yang perlu di-screenshot:** dashboard setelah login berhasil, pastikan sapaan dan 4 tombol menu terlihat.
+dashboard setelah login berhasil, pastikan sapaan dan 4 tombol menu terlihat.
 
-![Dashboard Siang](screenshots/05-dashboard-siang.png)
+![Dashboard Siang](<img width="1495" height="935" alt="image" src="https://github.com/user-attachments/assets/335b1923-6d23-42ba-a1fd-40ee88923f0f" />
+)
 
 ### 6. Dashboard (mode malam)
-**Yang perlu di-screenshot:** klik tombol "Mode Malam" di dashboard.
+klik tombol "Mode Malam" di dashboard.
 
-![Dashboard Malam](screenshots/06-dashboard-malam.png)
+![Dashboard Malam](<img width="1500" height="932" alt="image" src="https://github.com/user-attachments/assets/5ae9e3bc-3502-4590-8214-69afc63cb576" />
+)
 
 ### 7. Halaman Stok / Katalog
-**Yang perlu di-screenshot:** tabel katalog yang terisi dari `data.js`, termasuk cover buku.
+\tabel katalog yang terisi dari `data.js`, termasuk cover buku.
 
-![Halaman Stok](screenshots/07-stok.png)
+![Halaman Stok](<img width="1247" height="782" alt="image" src="https://github.com/user-attachments/assets/7eb52dd7-b956-46ce-bff7-ef43c7c3ae8c" />
+)
 
 ### 8. Tambah stok baru
-**Yang perlu di-screenshot:** setelah menambah buku lewat form, baris baru muncul di tabel.
+setelah menambah buku lewat form, baris baru muncul di tabel.
 
-![Tambah Stok](screenshots/08-stok-tambah.png)
+![Tambah Stok](<img width="1217" height="792" alt="image" src="https://github.com/user-attachments/assets/94c95b39-3e3d-414e-b357-e0be645a4ce9" />
+)
 
 ### 9. Validasi form stok
-**Yang perlu di-screenshot:** kirim form stok dengan data kosong atau salah sampai pesan error merah muncul.
+kirim form stok dengan data kosong atau salah sampai pesan error merah muncul.
 
-![Validasi Stok](screenshots/09-stok-validasi.png)
+![Validasi Stok](<img width="1501" height="717" alt="image" src="https://github.com/user-attachments/assets/f0dbaf3f-5570-4c78-8a67-11bb77ca110d" />
+)
 
 ### 10. Halaman Pemesanan (keranjang)
-**Yang perlu di-screenshot:** keranjang berisi beberapa buku dengan jumlah diubah dan total terhitung.
+keranjang berisi beberapa buku dengan jumlah diubah dan total terhitung.
 
-![Keranjang](screenshots/10-checkout-keranjang.png)
+![Keranjang](<img width="1361" height="550" alt="image" src="https://github.com/user-attachments/assets/05825049-b4e9-418b-b395-e8aeb9e71d40" />
+)
 
 ### 11. Validasi form pemesan
-**Yang perlu di-screenshot:** kirim form pemesan dengan No. HP atau alamat tidak valid sampai pesan error muncul.
+kirim form pemesan dengan No. HP atau alamat tidak valid sampai pesan error muncul.
 
-![Validasi Pemesanan](screenshots/11-checkout-validasi.png)
+![Validasi Pemesanan](<img width="1221" height="488" alt="image" src="https://github.com/user-attachments/assets/9d0bb688-a57b-43bf-8b65-7c15f03d5aad" />
+)
 
 ### 12. Pesanan berhasil
-**Yang perlu di-screenshot:** alert "Pesanan berhasil" yang menampilkan nomor Delivery Order dan total.
+alert "Pesanan berhasil" yang menampilkan nomor Delivery Order dan total.
 
-![Pesanan Berhasil](screenshots/12-checkout-berhasil.png)
+![Pesanan Berhasil](<img width="1182" height="417" alt="image" src="https://github.com/user-attachments/assets/54bb3dc2-914b-4084-bc75-c8d23b705aed" />
+)
 
 ### 13. Riwayat transaksi
-**Yang perlu di-screenshot:** bagian "Laporan & History Transaksi" yang menampilkan pesanan tadi.
+bagian "Laporan & History Transaksi" yang menampilkan pesanan tadi.
 
-![Riwayat Transaksi](screenshots/13-riwayat.png)
+![Riwayat Transaksi](<img width="1231" height="286" alt="image" src="https://github.com/user-attachments/assets/450b8ae4-ba95-4a24-ada9-f8faf5735db8" />
+)
 
 ### 14. Tracking: hasil pencarian
-**Yang perlu di-screenshot:** cari nomor `20230013`, tampilkan progress bar, detail, dan riwayat perjalanan.
+cari nomor `20230013`, tampilkan progress bar, detail, dan riwayat perjalanan.
 
-![Tracking Berhasil](screenshots/14-tracking-hasil.png)
+![Tracking Berhasil](<img width="1248" height="847" alt="image" src="https://github.com/user-attachments/assets/b58fbfb1-a82f-4aba-934e-e9b9954693f1" />
+)
 
 ### 15. Tracking: sedang dalam perjalanan
-**Yang perlu di-screenshot:** cari nomor `20230012` (status "Dalam Perjalanan") untuk menunjukkan progress bar belum penuh.
+cari nomor `20230012` (status "Dalam Perjalanan") untuk menunjukkan progress bar belum penuh.
 
-![Tracking Dalam Perjalanan](screenshots/15-tracking-perjalanan.png)
+![Tracking Dalam Perjalanan](<img width="1330" height="832" alt="image" src="https://github.com/user-attachments/assets/7115bc07-bee2-45e0-ba65-89e546e0388a" />
+)
 
 ### 16. Tracking: nomor tidak ditemukan
-**Yang perlu di-screenshot:** cari nomor sembarang (misalnya `99999`) sampai pesan "tidak ditemukan" muncul.
+cari nomor sembarang (misalnya `99999`) sampai pesan "tidak ditemukan" muncul.
 
-![Tracking Tidak Ditemukan](screenshots/16-tracking-gagal.png)
+![Tracking Tidak Ditemukan](<img width="1222" height="372" alt="image" src="https://github.com/user-attachments/assets/c88ea3ae-3a1b-4256-9080-d57381bce342" />
+)
 
 ### 17. Struktur folder project
-**Yang perlu di-screenshot:** panel Explorer di editor (VS Code) yang memperlihatkan struktur folder.
+panel Explorer di editor (VS Code) yang memperlihatkan struktur folder.
 
-![Struktur Folder](screenshots/17-struktur-folder.png)
+![Struktur Folder](<img width="342" height="537" alt="image" src="https://github.com/user-attachments/assets/dd3f6e30-c6f1-4d12-b2ae-ec398176dba6" />
+)
 
 ---
 
 ## 📝 Catatan
 - Data pesanan dan akun baru hanya tersimpan di browser (`localStorage`) karena project ini tidak memakai backend.
 - Halaman login memakai nama `index.html` sesuai struktur folder pada soal.
-
-[isi catatan tambahan jika ada]
